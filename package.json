@@ -1,7 +1,7 @@
 {
   "name": "upload-to-rolling-release",
   "version": "1.0.0",
-  "description": "GitHub action for uploading an artifact to a central repo release",
+  "description": "GitHub action intended for uploading an artifact on every push to a central repo's release",
   "main": "index.js",
   "repository": {
     "type": "git",

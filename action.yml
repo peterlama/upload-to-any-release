@@ -1,0 +1,17 @@
+name: 'Upload to release'
+description: 'Upload artifact to a GitHub release'
+inputs:
+  path:
+    description: 'Path of file to upload'
+    required: true
+  repo:
+    description: 'Release repo name'
+    required: true
+  release-tag:
+    description: 'Tag of the release'
+    required: true
+  github-token:
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
