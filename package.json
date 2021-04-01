@@ -1,0 +1,21 @@
+{
+  "name": "upload-to-rolling-release",
+  "version": "1.0.0",
+  "description": "GitHub action for uploading an artifact to a central repo release",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterlama/upload-to-rolling-release.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterlama/upload-to-rolling-release/issues"
+  },
+  "homepage": "https://github.com/peterlama/upload-to-rolling-release#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}
