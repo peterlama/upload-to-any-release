@@ -27,7 +27,11 @@ async function run() {
     const existingAsset = release.assets.find(asset => asset.name == fileName);
 
     if (existingAsset) {
-      throw new Error(`Asset ${fileName} already exists`);
+      const deleteResponse = await githubApi.repos.deleteReleaseAsset({
+        owner: releaseRepoOwner,
+        repo: releaseRepo,
+        asset_id: existingAsset.id,
+      });
     } else {
       const fileData = fs.readFileSync(artifactPath);
       const uploadResponse = await githubApi.repos.uploadReleaseAsset({
