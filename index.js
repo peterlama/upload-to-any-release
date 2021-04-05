@@ -5,8 +5,8 @@ const github = require('@actions/github');
 
 async function run() {
   try {
-    const releaseRepoOwner = github.context.repo.owner;
-    const releaseRepo = core.getInput('repo');
+    const releaseRepoOwner = path.dirname(core.getInput('repo'));
+    const releaseRepo = path.basename(core.getInput('repo'));
     const releaseTag = core.getInput('release-tag');
     const artifactPath = core.getInput('path');
 

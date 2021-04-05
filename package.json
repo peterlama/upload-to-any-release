@@ -1,19 +1,19 @@
 {
-  "name": "upload-to-rolling-release",
+  "name": "upload-to-any-release",
   "version": "1.0.0",
-  "description": "GitHub action intended for uploading an artifact on every push to a central repo's release",
+  "description": "GitHub action intended for uploading an artifact on every push to any specified github repo release",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peterlama/upload-to-rolling-release.git"
+    "url": "git+https://github.com/peterlama/upload-to-any-release.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/peterlama/upload-to-rolling-release/issues"
+    "url": "https://github.com/peterlama/upload-to-any-release/issues"
   },
-  "homepage": "https://github.com/peterlama/upload-to-rolling-release#readme",
+  "homepage": "https://github.com/peterlama/upload-to-any-release#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0"
